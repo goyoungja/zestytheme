@@ -2784,13 +2784,13 @@ fieldset {
 
 /* replaces Jellyfin logo */
 .adminDrawerLogo img {
-    content: url(https://github.com/goyoungja/zestytheme/blob/main/banner-light-white.png?raw=true) !important;
+    content: url(https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/logo/jellyfin-logo-light.png) !important;
 }
 imgLogoIcon {
-    content: url(https://github.com/goyoungja/zestytheme/blob/main/banner-light-white.png?raw=true) !important;
+    content: url(https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/logo/jellyfin-logo-light.png) !important;
 }
 .pageTitleWithLogo {
-    background-image: url(https://github.com/goyoungja/zestytheme/blob/main/banner-light-white.png?raw=true) !important;
+    background-image: url(https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/logo/jellyfin-logo-light.png) !important;
 } /* imgur link https://i.imgur.com/wHaGTm4.png */
 
 /* fixes issue with Movies > Genres hover boxes */
@@ -4211,4 +4211,13 @@ imgLogoIcon {
 .layout-tv .verticalSection h2 {
     font-size: 1.75em;
     font-weight: 600;
+}
+/* =========================================================
+   goyoungja Custom Logo (jsDelivr CDN 0ms Loading)
+   ========================================================= */
+.pageTitleWithDefaultLogo {
+    background-image: url("https://cdn.jsdelivr.net/gh/goyoungja/zestytheme@main/banner-light-white.png") !important;
+}
+.formDialogHeaderLogo {
+    background-image: url("https://cdn.jsdelivr.net/gh/goyoungja/zestytheme@main/banner-light-white.png") !important;
 }
