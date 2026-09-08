@@ -1191,12 +1191,6 @@ a[data-role="button"]:hover {
     color: rgb(var(--accent)) !important;
 }
 
-/* Inverts color of SessionApp icon, but does't look good agains dark BGs
-  .sessionNowPlayingInnerContent .sessionAppInfo:not(sessionDeviceName) {
-	  filter: invert();
-	  opacity: 0.65;
-  } */
-
 /* changes color of active device text in settings > dashboard  and adds padding*/
 #dashboardPage .sessionNowPlayingInnerContent {
     color: rgb(var(--accent));
@@ -1410,8 +1404,6 @@ progress::-webkit-progress-value {
 
 /* #### Rounding #### */
 
-/*Rounded corners on pretty much everything*/
-
 progress {
     border-radius: var(--rounding);
 }
@@ -1437,7 +1429,6 @@ progress::-webkit-progress-value {
     border-bottom-right-radius: var(--rounding);
 }
 
-/* rounds and add a dark blur to media cover/thumbs on hover */
 .cardOverlayContainer {
     border-radius: var(--rounding) !important;
     background: rgba(var(--accent-off), 0.42);
@@ -1483,7 +1474,6 @@ progress::-webkit-progress-value {
     border-radius: var(--rounding) !important;
 }
 
-/* Makes check boxes circular */
 .checkboxOutline,
 .multiSelectCheckboxOutline {
     border-radius: var(--rounding-circle) !important;
@@ -1527,15 +1517,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     border-radius: var(--rounding) var(--rounding) 0 0 !important;
 }
 
-/* Fix rounding issue on media poster in media page */
 .cardBox:not(.visualCardBox) .cardPadder,
 .cardContent-shadow {
     box-shadow: 0 0.0725em 0.29em 0 rgba(0, 0, 0, 0);
 }
-
-/* indicator corner */
-
-/*Card indicators style corner*/
 
 .cardIndicators,
 .listItemIndicators {
@@ -1555,10 +1540,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     box-shadow: -1px 1px 5px 1px rgba(var(--darkest), 0.5);
     background: rgba(var(--accent), 1);
     color: rgb(var(--darkest));
-}
-.innerCardFooter {
-    /*  border-radius: 0px var(--rounding) !important; */ /* conflicts with my edits of the progress bar */
-    /*  box-shadow: 1px 0px 5px 2px rgba(var(--dark),0.5);  */
 }
 .countIndicator,
 .playedIndicator {
@@ -1599,26 +1580,21 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     top: 0%;
 }
 
-/* fix for changes in 10.9.x */
 [dir="ltr"] .cardIndicators {
     right: 0em !important;
 }
 
 /* colorful */
 
-  /*Colors for Title ribbon */
   .layout-desktop .detailRibbon {
     background: rgba(0, 0, 0, 0);
   	margin-top: -.7em;
 	  display: inherit;
 	  
   }
-  /* Item backdrop overlay color */
   .itemBackdrop::after {
     background: rgba(0,0,0,0) !important;
   }
-
-/*Accenting*/
 
 .preload {
     background-color: black;
@@ -1631,7 +1607,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     background-color: rgba(var(--accent), 0.15) !important;
     backdrop-filter: blur(25px);
 }
-/*Fix footers/headers displaying on small pop-ups*/
 .formDialogFooter-clear,
 .formDialogHeader-clear,
 .innerCardFooterClear {
@@ -1678,10 +1653,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     transition: 0.2s;
 }
 
-.navMenuOption-selected {
-    color: var(--dark);
-}
-
 .subtitleappearance-preview {
     background: linear-gradient(140deg, rgba(var(--accent)), #111) !important;
 }
@@ -1696,12 +1667,10 @@ a[data-role="button"] {
     transition: all 0.2s !important;
 }
 
-/*Various box-shadows, might be related to glowstyle*/
 .cardBox:not(.visualCardBox) .cardPadder,
 .cardContent-shadow {
     box-shadow: none !important;
 }
-/* glow around text on AppleTV-esque bar */
 body,
 h1,
 h2,
@@ -1719,19 +1688,14 @@ h4,
     box-shadow: 1px 1px 4px 0px rgba(var(--darkest), 0.3) !important;
 }
 
-/*Dash and general UI styling*/
 .paperList,
 .visualCardBox {
     background-color: rgba(var(--darkest), 1);
-}
-.navMenuOption-selected {
-    color: var(--dark);
 }
 progress {
     background: rgba(0, 0, 0, 0.5) !important;
 }
 
-/*Colors for loading spinner, placeholders, scroll bars*/
 .mdl-spinner__layer-1 {
     border-color: rgba(var(--accent), 1);
 }
@@ -1745,7 +1709,6 @@ progress {
     border-color: rgba(var(--accent), 0.5);
 }
 
-/* changes colors of Active devices cards in settings > dashboard */
 .defaultCardBackground1 {
     background-color: rgba(var(--dark-highlight), 1);
 }
@@ -1765,7 +1728,6 @@ progress {
     background-color: rgba(var(--dark-highlight), 1);
 }
 
-/*Syncplay*/
 @-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(0.95);
@@ -1859,29 +1821,23 @@ progress {
     }
 }
 
-/* Syncplay theming*/
 .syncPlayIconCircle {
     color: rgba(var(--accent), 1) !important;
     text-shadow: none !important;
 }
 
-/* Red shutdown button */
 #btnShutdown {
     background: rgba(var(--cherry-red)) !important;
     color: rgba(var(--darkest)) !important;
 }
 
-/*Remove divider on list items*/
 .listItem-border {
     border: 0 !important;
 }
 
-/* Green played check icon */
 .playstatebutton-icon-played {
     color: rgba(var(--jade-green), 1) !important;
 }
-
-/* white dialog Backdrop */
 
 .dialogBackdropOpened {
     opacity: 0.2;
@@ -1892,12 +1848,8 @@ progress {
 }
 
 .tmla-mask {
-    background-color: rgba(249, 249, 249, 0.2); /* hardcoded */
+    background-color: rgba(249, 249, 249, 0.2);
 }
-
-/* floating */
-
-/* Floating progressbar edit - from JellyFlix theme */
 
 .itemProgressBar {
     backdrop-filter: blur(4px);
@@ -1910,7 +1862,6 @@ progress {
     height: 8px;
 }
 
-/* don't apply the blur inside Settings > Dashboard as it broke things for some reason */
 #dashboardPage .itemProgressBar {
     backdrop-filter: none;
 }
@@ -1928,8 +1879,6 @@ progress {
     box-shadow: 1px 1px 5px rgba(var(--dark), 0.25);
 }
 
-/* glossy */
-
 @supports (backdrop-filter: blur(15px)) {
     .dialog,
     .mainDrawer,
@@ -1942,26 +1891,11 @@ progress {
     #dashboardPage .backgroundProgress > div {
         backdrop-filter: blur(4px);
     }
-    @media all and (max-width: 70em) {
-        .cardOverlayButtonIcon {
-            /* background-color: rgba(var(--darkest), 0.35) !important; */
-        }
-        .cardOverlayButtonIcon {
-            /* backdrop-filter: blur(4px); */
-        }
-    }
-    .indicator {
-        /*  backdrop-filter: blur(2px); */
-    }
-
     .paper-icon-button-light:hover:not(.headerButtonRight) {
         backdrop-filter: blur(4px);
     }
 }
 
-/* Episode List */
-
-/*Size episode preview images in a normal way*/
 .listItemImage.listItemImage-large.itemAction.lazy {
     transition: filter 0.2s;
 }
@@ -1974,7 +1908,6 @@ progress {
     font-size: 1.6em !important;
 }
 
-/* CSS rules for screen sizes larger than 110em */
 @media all and (min-width: 105.01em) {
     .listItemImage.listItemImage-large.itemAction.lazy {
         height: 190px;
@@ -1984,7 +1917,6 @@ progress {
         height: 168px;
     }
 }
-/* CSS rules for screen sizes between 80em and 110em */
 @media all and (min-width: 80em) and (max-width: 105em) {
     .listItemImage.listItemImage-large.itemAction.lazy {
         height: 127px;
@@ -2003,7 +1935,6 @@ progress {
     }
 }
 
-/* CSS rules for screen sizes less than 80em */
 @media all and (max-width: 79.99em) {
     .listItemImage.listItemImage-large.itemAction.lazy {
         height: 80px;
@@ -2023,7 +1954,6 @@ progress {
     }
 }
 
-/* Zen browser fix */
 @media (min-width: 87.5em) and (max-width: 105em) {
     .layout-desktop .listItemImage.listItemImage-large.itemAction.lazy {
         height: 127px;
@@ -2046,7 +1976,6 @@ progress {
         height: 8em;
     }
 }
-/* Fix for logos on 2K screens */
 @media (min-width: 130em) {
     .layout-desktop .detailPageWrapperContainer {
         margin-top: -84vh;
@@ -2055,9 +1984,7 @@ progress {
         width: 36em;
     }
 }
-/* #### login frame #### */
 
-/*Narrow the login form, size according to display size (bigger on mobile)*/
 #loginPage .readOnlyContent,
 #loginPage form {
     max-width: 22em;
@@ -2067,7 +1994,6 @@ progress {
     margin-top: 8em;
 }
 
-/*Hide "manual" and "forgot" buttons}*/
 #loginPage .raised.cancel.block.btnForgotPassword.emby-button {
     display: none;
 }
@@ -2078,7 +2004,7 @@ progress {
     background: rgba(var(--dark-highlight), 0.33);
     backdrop-filter: blur(2px);
     width: 24em;
-    border-radius: 44px; /* hardcoded */
+    border-radius: 44px;
 }
 #loginPage .squareCard {
     width: 33%;
@@ -2086,7 +2012,6 @@ progress {
 #loginPage form {
     padding-top: 4em;
 }
-/* Fix for LogIn Box greeting */
 #loginPage .visualLoginForm h1 {
     padding-top: 3em;
 }
@@ -2101,23 +2026,17 @@ progress {
     display: none !important;
 }
 
-/* margin to Jellyfin logo */
 .pageTitle {
     margin: 0 0 0 0.15em;
 }
 
-/* #### Media Player #### */
-
-/* hide and rotate volume bar in media player */
-
-/* Ensure the volume slider container is properly rotated and positioned */
 .osdVolumeSliderContainer {
     -webkit-flex-grow: 1;
     flex-grow: 1;
-    min-width: 3em; /* Vertical height before rotation */
-    min-height: 4em; /* Width before rotation */
-    width: 6.5em; /* Actual width after rotation */
-    height: 2em; /* Actual height after rotation */
+    min-width: 3em;
+    min-height: 4em;
+    width: 6.5em;
+    height: 2em;
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -2131,7 +2050,6 @@ progress {
     border-radius: var(--rounding);
     backdrop-filter: blur(3px);
 }
-/* Increase the hover area around the mute button */
 .buttonMute {
     position: relative;
 }
@@ -2144,30 +2062,24 @@ progress {
     bottom: -10px;
     z-index: 1;
 }
-/* Make the volume slider container visible and interactive */
 .buttonMute:hover + .osdVolumeSliderContainer,
 .osdVolumeSliderContainer:hover {
     opacity: 1;
     visibility: visible;
-    pointer-events: auto; /* Keep this interactive */
+    pointer-events: auto;
     transition:
         opacity 0.3s ease,
         visibility 0s;
 }
-/* Keep the volume slider interactive even when not directly hovered */
 .osdVolumeSliderContainer {
-    /* Add this to maintain interaction */
     pointer-events: auto !important;
 }
-/* But when hovering over non-volume controls, allow interaction */
 .player:hover:not(.osdVolumeSliderContainer):not(.buttonMute) * {
     pointer-events: auto;
 }
-/* Prevent other elements from interfering when volume slider is active */
 .player .osdVolumeSliderContainer:hover ~ * {
     pointer-events: none;
 }
-/* rotate volume number indicator */
 .osdVolumeSliderContainer .sliderBubbleTrack {
     left: 0;
     margin: 4.1em 5em;
@@ -2175,7 +2087,6 @@ progress {
     right: 0;
     transform: rotate(90deg);
 }
-/* tweak volume slider */
 .osdVolumeSlider.mdl-slider.mdl-js-slider.mdl-slider-hoverthumb {
     display: initial;
     position: absolute;
@@ -2187,7 +2098,6 @@ progress {
     margin: 0 1em 0 0.29em;
     margin-right: 0px;
 }
-/* theme volume OSD */
 .iconOsd,
 .subtitleSyncContainer {
     -webkit-backdrop-filter: blur(5px);
@@ -2197,8 +2107,6 @@ progress {
     color: rgba(var(--accent));
 }
 
-/* Hide extra buttons in media player */
-
 .btnPreviousChapter,
 .btnNextChapter,
 .btnRewind,
@@ -2207,8 +2115,6 @@ progress {
 .buttons.focuscontainer-x .btnUserRating {
     display: none;
 }
-
-/* increase player header and bottom icon sizes */
 
 .osdHeader .headerTop {
     max-height: 3em;
@@ -2222,12 +2128,10 @@ progress {
     font-size: 125%;
 }
 
-/* increase header bar icon sizes */
 .layout-desktop .headerTop {
     font-size: 125%;
 }
 
-/* increases sidebar icon sizes to match above */
 .layout-desktop .drawerContent {
     font-size: 110%;
 }
@@ -2237,7 +2141,6 @@ progress {
     margin-top: 0.35em;
 }
 
-/* turns slider bubble into same thickness as play bar*/
 .mdl-slider::-moz-range-thumb {
     border-radius: 50%;
     height: 0.8em;
@@ -2256,7 +2159,6 @@ progress {
     width: 0.8em;
 }
 
-/* turns slider bubble into white rectangle on hover */
 .mdl-slider-hoverthumb:hover::-moz-range-thumb {
     transform: scale(0.75, 2.3);
     border-radius: 70%/17%;
@@ -2281,7 +2183,6 @@ progress {
     background-color: white;
 }
 
-/* round and blur progress bar */
 .mdl-slider-background-flex {
     background: rgba(var(--dark-highlight), 0.7);
     border: 0;
@@ -2298,17 +2199,13 @@ progress {
     backdrop-filter: blur(4px) !important;
 }
 
-/* hides playbar markers */
 .sliderMarker.watched {
     background-color: transparent;
 }
 
 .sliderMarker.unwatched {
-    /*	background-color: rgba(var(--white-off),.35) !important; */
-    background-color: transparent; /* setting it to transparent bc it keeps flickering, even on the default JF theme */
+    background-color: transparent;
 }
-
-/* round playbar buffer */
 
 .mdl-slider-background-upper {
     background: rgba(var(--accent-off));
@@ -2320,7 +2217,6 @@ progress {
     border-radius: 12px;
 }
 
-/* dialogs */
 .dialog,
 .mainDrawer,
 .appfooter {
@@ -2337,7 +2233,6 @@ progress {
     border-bottom-right-radius: var(--rounding-large) !important;
 }
 
-/* prevents mainDrawer shadow from showing up */
 div.mainDrawer.transition.touch-menu-la {
     width: 320px !important;
     left: -340px !important;
@@ -2389,7 +2284,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
     color: rgba(var(--darkest), 1) !important;
 }
 
-/* changes the color of icons in various places such as settings > activity, settings> notifications, subtitle results, etc*/
 #peopleList .material-icons.listItemIcon.person,
 #listGenres .material-icons.listItemIcon.live_tv,
 #listStudios .material-icons.listItemIcon.live_tv,
@@ -2403,19 +2297,11 @@ div[data-role="controlgroup"] a.ui-btn-active {
     color: rgba(var(--darkest), 1) !important;
 }
 
-/* fixes alignment of download and delete icons in edit subtitle screen */
 .subtitleList,
 .btnDelete.listItemButton.paper-icon-button-light,
 .subtitleResults .btnDownload.listItemButton.paper-icon-button-light {
     margin-right: 1em;
 }
-
-/* moves dialogs up
-  .dialogContainer {
-	  top: -110px;
-  }*/
-
-/* rounds and pads episode list */
 
 .layout-desktop #childrenContent .listItem {
     padding-left: 1em !important;
@@ -2430,7 +2316,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
     backdrop-filter: blur(6px);
 }
 
-/* collapsable menu */
 .collapseContent {
     background-color: rgba(var(--darkest), 0.96);
     border-radius: var(--rounding-alt);
@@ -2444,7 +2329,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
     width: 1.78em;
 }
 
-/*Improve some menu alignments*/
 .navMenuOptionText {
     margin-top: 0;
 }
@@ -2452,7 +2336,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
     margin-left: 1em;
 }
 .formDialogContent {
-    margin-bottom: 1.1em; /* previously 6.2 */
+    margin-bottom: 1.1em;
 }
 .dialogContentInner {
     padding: 0.5em 1em 1em;
@@ -2463,13 +2347,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
     margin: 1em;
 }
 
-/* adds padding to entries in Settings > Dashboard: Activity, Settings > Activity, etc.
-  .listItem:not(.listItem-button.actionSheetMenuItem.emby-button) {
-    padding-left: 1em;
-  }
-  */
-
-/* Removes above padding from Settings > Dashboard: Path */
 div.dashboardSection:nth-child(3) > div:nth-child(2) .listItem {
     padding-left: 0em;
 }
@@ -2478,7 +2355,6 @@ div.dashboardSection:nth-child(3) > div:nth-child(2) .listItem {
     padding: 0.8em;
 }
 
-/* makes progressbar in the Settings > Dashboard nicer */
 #dashboardPage .activeSession .backgroundProgress,
 .activeSession .playbackProgress,
 .activeSession .transcodingProgress {
@@ -2498,24 +2374,16 @@ div.dashboardSection:nth-child(3) > div:nth-child(2) .listItem {
     border-radius: var(--rounding-large) !important;
 }
 
-/* adds top padding to right click dialogs
-  .dialogContainer .focuscontainer.actionsheet-not-fullscreen.actionSheet.centeredDialog {
-	  padding-top: 5.5px;
-  }
-  */
-
 .formDialogContent.smoothScrollY {
     padding-bottom: 3em;
     padding-top: 2em;
 }
 
-/* fixes for right click menus post 10.9.x */
 [dir="ltr"] .listItem {
     padding: 0.55em 0.45em 0.55em 0.45em;
     text-align: left;
 }
 
-/* recolors icons in Settings > Activities, Notifications and Scheduled Tasks*/
 #dashboardPage .listItemIcon,
 #serverActivityPage .listItemIcon {
     background-color: rgba(var(--accent-off)) !important;
@@ -2541,9 +2409,6 @@ div.dashboardSection:nth-child(3) > div:nth-child(2) .listItem {
     color: rgba(var(--darkest)) !important;
 }
 
-/* fields no border */
-
-/*No borders, background highlights*/
 .infoBanner {
     background: rgba(var(--accent), 0.15) !important;
 }
@@ -2566,7 +2431,6 @@ fieldset {
     background: rgba(0, 0, 0, 0.2);
 }
 
-/*Change look of in-focus fields: text areas and selection panels */
 .itemSelectionPanel {
     border: 0.01em solid rgba(var(--accent)) !important;
     background-color: rgba(var(--accent), 0.2) !important;
@@ -2614,7 +2478,6 @@ fieldset {
     margin-top: 2px;
 }
 
-/* increases size of check boxes */
 .checkboxList > .emby-checkbox-label {
     display: flex;
     margin: 0.5em 0.5em 0.4em 0.4em;
@@ -2625,25 +2488,19 @@ fieldset {
     padding: 0 0 0 3em;
 }
 
-/* padding to fields */
-
 .emby-input,
 .emby-textarea,
 .emby-select {
     padding: calc(0.8em - 4.5px) !important;
 }
 
-/* align labels with fields in track selection */
 .trackSelections .selectContainer .selectLabel {
     padding-top: calc(calc(0.8em - 4.5px) / 2) !important;
 }
 
-/* fixes audio/subtitle selector arrow in media page */
 .trackSelections .selectContainer .selectArrowContainer .selectArrow {
     margin-top: 4px;
 }
-
-/* Removes hover bg from right headerbar */
 
 .headerRight .paper-icon-button-light:hover,
 .headerRight .paper-icon-button-light:hover:not(:disabled) {
@@ -2655,19 +2512,14 @@ fieldset {
     background-color: transparent !important;
 }
 
-/* Fix profile pic in top right headerbar */
 .headerUserButton {
     margin-right: 0.14em;
 }
 
-/* Mobile fixes */
 .layout-mobile .headroom--unpinned {
     transform: translateY(-50%);
 }
 
-/* AppleTV-esque bar */
-
-/* Transparent header bar */
 .skinHeader {
     background-color: transparent !important;
 }
@@ -2676,18 +2528,14 @@ fieldset {
     padding-bottom: 1.5em !important;
 }
 
-/* Button height */
 .headerRight,
 .layout-desktop .emby-tab-button {
     height: 45px !important;
 }
 
-/* fixes issue with text no being centered */
 .emby-tab-button {
     display: inline-flex;
 }
-
-/* Rounded header buttons */
 
 .headerTabs,
 .headerRight {
@@ -2748,7 +2596,6 @@ fieldset {
     border-radius: var(--rounding-circle) !important;
 }
 
-/* fix for Media (small) cards in home screen */
 #homeTab .homeLibraryButton {
     background: rgba(var(--accent), 0.4) !important;
 }
@@ -2777,12 +2624,10 @@ fieldset {
     color: rgba(var(--dark)) !important;
 }
 
-/* hides card overlay buttons (watched, favorites, etc) */
 .cardOverlayButton-br {
     display: none;
 }
 
-/* replaces Jellyfin logo */
 .adminDrawerLogo img {
     content: url(https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/logo/jellyfin-logo-light.png) !important;
 }
@@ -2791,9 +2636,8 @@ imgLogoIcon {
 }
 .pageTitleWithLogo {
     background-image: url(https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/logo/jellyfin-logo-light.png) !important;
-} /* imgur link https://i.imgur.com/wHaGTm4.png */
+}
 
-/* fixes issue with Movies > Genres hover boxes */
 .sectionTitleTextButton > .sectionTitle {
     margin-bottom: 0.35em;
     margin-top: 0.35em;
@@ -2805,12 +2649,10 @@ imgLogoIcon {
     display: none;
 }
 
-/* centers section title button's text in home page caused by the above */
 .homePage .sectionTitleTextButton {
     left: -0.6em;
 }
 
-/* Playback info tweaks */
 .playerStats {
     background: rgba(var(--dark), 0.75);
     border-radius: var(--rounding);
@@ -2840,7 +2682,6 @@ imgLogoIcon {
     padding-right: 38%;
 }
 
-/* Moves TV shows Up Next to bottom right */
 .layout-desktop .nextUpSection {
     border-radius: 34px;
     left: calc(70vw - 0.5em);
@@ -2853,10 +2694,8 @@ imgLogoIcon {
     padding-top: 0.3em;
     backdrop-filter: blur(10px);
     position: absolute;
-    /* margin-left: 1.5vw; */
 }
 
-/* Tweaks up Next dialog */
 [dir="ltr"] .upNextContainer {
     margin: 0 2em 2em 0;
     padding: 1em 0.9em 1.1em 1.5em;
@@ -2885,7 +2724,6 @@ imgLogoIcon {
     margin-bottom: 1.3em !important;
 }
 
-/* changes the color of filter indicator */
 .filterIndicator {
     background: rgba(var(--accent));
     color: rgba(var(--darkest));
@@ -2899,7 +2737,6 @@ imgLogoIcon {
 
 /*#####################################################################################################################
               LAYOUT MOBILE
-
   ######################################################################################################################*/
 
 @media (orientation: portrait) {
@@ -2959,8 +2796,6 @@ imgLogoIcon {
     margin-bottom: 0.4em;
 }
 
-/* Seccion Peliculas/Series */
-
 .layout-mobile .itemTags,
 .layout-mobile .itemName.originalTitle,
 .layout-mobile .writersGroup,
@@ -2969,7 +2804,6 @@ imgLogoIcon {
     display: none;
 }
 
-/* Quitamos imagen de poster */
 .layout-mobile .detailImageContainer .card,
 .layout-mobile .detailImageContainer .card.backdropCard,
 .layout-mobile .detailImageContainer .card.portraitCard,
@@ -2982,7 +2816,6 @@ imgLogoIcon {
     display: none !important;
 }
 
-/* Mostrando Logo y posicionandolo */
 .layout-mobile .detailLogo {
     display: block;
     width: 15em;
@@ -2990,12 +2823,10 @@ imgLogoIcon {
     top: 45vw;
 }
 
-/* Mismo color de fondo a franja gris */
 .detailRibbon {
-    background: rgba(32, 32, 32, 0); /* hardcoded */
+    background: rgba(32, 32, 32, 0);
 }
 
-/* Sipnosis tamano de 5 lineas */
 .detail-clamp-text {
     -webkit-line-clamp: 4;
 }
@@ -3020,12 +2851,10 @@ imgLogoIcon {
     text-align: left;
 }
 
-/* moviendo a la Izq Contenedor de botones de pelicula*/
 .layout-mobile .mainDetailButtons {
     padding-left: 0;
 }
 
-/* arregalndo padding y margin y aumentando tamano de fanart y agregando degradado */
 .layout-mobile .itemBackdrop {
     background-size: contain;
     height: 61.5vw;
@@ -3048,7 +2877,6 @@ imgLogoIcon {
     padding: 0 1em 0.3em 1em;
 }
 
-/* play button */
 .layout-mobile .mainDetailButtons {
     margin-top: 1.5em;
 }
@@ -3101,7 +2929,6 @@ imgLogoIcon {
     display: block;
 }
 
-/* fixes placement of episodes titles */
 .layout-mobile .listItem-content .listItemBody {
     left: 110px;
     position: relative;
@@ -3135,7 +2962,6 @@ imgLogoIcon {
 
 .layout-mobile .detailPagePrimaryContent {
     position: relative;
-    /* margin-top: 1em; */
 }
 
 .layout-mobile .detailPagePrimaryContainer {
@@ -3144,7 +2970,6 @@ imgLogoIcon {
     position: relative;
 }
 
-/* Animation of disappearing headerbars in mobile layout */
 .layout-mobile .headroom--unpinned {
     transform: translateY(-115%);
     transition: transform 0.3s ease-in-out;
@@ -3165,12 +2990,10 @@ imgLogoIcon {
     margin-right: 0.35em;
 }
 
-/* adds padding to custom css box */
 #txtCustomCss {
     padding: 1em !important;
 }
 
-/* changes color of library scan percentage */
 #divRunningTasks > p:nth-child(odd) > span:nth-child(3) {
     color: rgba(var(--accent), 1) !important;
 }
@@ -3179,12 +3002,9 @@ imgLogoIcon {
     color: rgba(var(--accent), 1) !important;
 }
 
-/* fixes selector arrow's wrong placement */
 .selectArrow {
     margin-top: 1.1em;
 }
-
-/* tweaks playback chapter thumbs */
 
 .chapterThumbTextContainer {
     background-color: rgba(var(--dark), 0.7) !important;
@@ -3246,7 +3066,6 @@ imgLogoIcon {
     width: 315px !important;
 }
 
-/* Makes posters larger in the Library view and Home screen */
 @media (min-width: 31.25em) {
     .layout-desktop .portraitCard,
     .layout-desktop .smallBackdropCard,
@@ -3336,7 +3155,6 @@ imgLogoIcon {
     background-position: 70%;
 }
 
-/* Limits the number of displayed posters in Genres tab to fit in one row */
 .layout-desktop {
     @media (max-width: 43.75em) {
         #genresTab .card:nth-child(n + 4) {
@@ -3367,7 +3185,6 @@ imgLogoIcon {
 
 /* --- ### PLUGINS ### --- */
 
-/* -# Intro Skipper #-*/
 .skip-button {
     background-color: rgba(var(--white));
     color: rgba(var(--darkest));
@@ -3384,13 +3201,10 @@ imgLogoIcon {
     background-color: rgba(var(--accent));
 }
 
-/* Support for Jellyscrub plugin */
-
 .chapterThumbTextContainer {
     background: rgba(var(--dark), 0.5) !important;
 }
 
-/* Support for Playback Reporting */
 .mainAnimatedPages .content-primary > table:first-of-type {
     border: 1px solid rgba(var(--accent-off));
     padding: 6px;
@@ -3459,7 +3273,6 @@ imgLogoIcon {
         -webkit-mask-composite: source-in;
         mask-composite: intersect;
     }
-    /* text layout - from Zombie */
     .layout-mobile .btnShuffle,
     .layout-mobile .listViewUserDataButtons,
     .layout-mobile .material-icons.detailButton-icon.check,
@@ -3774,7 +3587,7 @@ imgLogoIcon {
     }
     .layout-mobile .infoWrapper .itemMiscInfo-primary,
     .layout-mobile .itemName {
-        padding: 0em 5% 0em; /*May break things - prev 1.15em */
+        padding: 0em 5% 0em;
     }
     .layout-mobile [dir="ltr"] .mainDetailButtons {
         margin-bottom: 0;
@@ -3797,9 +3610,6 @@ imgLogoIcon {
         top: -14em;
         position: relative;
     }
-    .layout-mobile [dir="ltr"] .mainDetailButtons {
-        /* padding-left: 1%; */
-    }
     .layout-mobile #itemDetailPage .parentName .button-link {
         height: 5em;
         width: 65%;
@@ -3821,7 +3631,6 @@ imgLogoIcon {
         padding-left: 10em;
         justify-content: unset;
     }
-    /* text layout - from Zombie */
     .layout-mobile .btnShuffle,
     .layout-mobile .listViewUserDataButtons,
     .layout-mobile .material-icons.detailButton-icon.check,
@@ -4041,8 +3850,6 @@ imgLogoIcon {
     height: 3.6em;
 }
 
-/* Turn off TabBar animation */
-
 .layout-tv .emby-tab-button.show-focus:focus {
     -webkit-transform: none !important;
     transform: none !important;
@@ -4062,7 +3869,7 @@ imgLogoIcon {
     padding: 0.4em;
     padding-right: 0.8em;
     padding-left: 0.7em;
-    border-radius: 16px; /* update */
+    border-radius: 16px;
     color: rgb(var(--dark)) !important;
 }
 
@@ -4139,10 +3946,9 @@ imgLogoIcon {
 }
 
 .layout-tv .button-flat {
-    border-radius: 36px !important; /* update */
+    border-radius: 36px !important;
 }
 
-/* text layout - from Zombie */
 .layout-tv .btnShuffle,
 .layout-tv .listViewUserDataButtons,
 .layout-tv .material-icons.detailButton-icon.check,
@@ -4212,12 +4018,58 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
+
+/* =========================================
+   ZestyTheme íƒ­ ìˆ¨ê¹€ ë°©ì§€ ë° Request íƒ­ ê°•ì œ ë…¸ì¶œ
+   ========================================= */
+.emby-tabs-slider .emby-tab-button,
+.emby-tabs-slider .pageTab,
+.emby-tabs-slider .pageTab-custom,
+a.pageTab[href*="request"],
+div[data-id="request"],
+button[data-id="request"] {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.emby-tabs-slider {
+    overflow-x: auto !important;
+    display: flex !important;
+}
+
+.headerTabs {
+    max-width: none !important;
+    width: auto !important;
+}
+
 /* =========================================================
    goyoungja Custom Logo (jsDelivr CDN 0ms Loading)
    ========================================================= */
 .pageTitleWithDefaultLogo {
-    background-image: url("https://cdn.jsdelivr.net/gh/goyoungja/zestytheme@main/banner-light-white.png") !important;
+    background-image: url("/assets/banner-light-white.png") !important;
 }
 .formDialogHeaderLogo {
-    background-image: url("https://cdn.jsdelivr.net/gh/goyoungja/zestytheme@main/banner-light-white.png") !important;
+    background-image: url("/assets/banner-light-white.png") !important;
+}
+
+/* íƒ€ë¸”ë › ë¡œê³  */
+@media screen and (min-width: 700px) and (max-width: 1400px) {
+
+    .detailLogo,
+    .layout-desktop .detailLogo,
+    .layout-mobile .detailLogo {
+        position: absolute !important;
+        top: 90px !important;
+        left: 5% !important;
+        right: auto !important;
+        bottom: auto !important;
+        height: 90px !important;
+        width: 320px !important;
+        max-height: 90px !important;
+        max-width: 320px !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: left center !important;
+    }
 }
